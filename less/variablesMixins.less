@@ -1,0 +1,17 @@
+//variables
+ @main-color: #1f1e1e;
+ @secondary-color: #ec7200;
+// @heading-font: ;
+// @body-font: ;
+
+//media query variables
+@tablet: ~'(min-width: 767px)';
+@desktop: ~'(min-width: 1100px)';
+
+//mixins
+.display-flex(@justify, @align, @direction) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}

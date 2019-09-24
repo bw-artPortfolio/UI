@@ -235,7 +235,9 @@ body {
   flex-wrap: wrap;
 }
 .team-section .section-body .card {
-  margin-bottom: 5%;
+  margin-bottom: 8%;
+  width: 150px;
+  height: 150px;
 }
 @media (min-width: 767px) {
   .team-section .section-body .card {
@@ -244,7 +246,7 @@ body {
   }
 }
 .team-section .section-body .card h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   color: #ec7200;
 }

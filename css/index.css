@@ -129,7 +129,30 @@ table {
 html {
   font-size: 62.5%;
 }
+body {
+  background-color: #F2EDE5;
+}
+.container {
+  background-color: #D9D4CD;
+}
+h1 {
+  color: #0D0D0D;
+  font-size: 4rem;
+}
+h2 {
+  color: #403E3B;
+  font-size: 3.5rem;
+}
+h3 {
+  color: #403E3B;
+  font-size: 3rem;
+}
+p {
+  color: #0F0F0F;
+  font-size: 2.5rem;
+}
 nav {
+  background-color: #0D0D0D;
   padding: 15px;
 }
 nav .navTextContainer {
@@ -141,29 +164,19 @@ nav .navTextContainer {
 nav .navTextContainer a {
   padding: 1.5rem;
   text-decoration: none;
-  font-size: 2rem;
-  color: black;
+  font-size: 2.5rem;
+  color: #D9D4CD;
 }
 .container {
+  padding: 20px 50px;
   max-width: 1000px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 .container .imgBanner img {
   width: 100%;
   padding-bottom: 15px;
-}
-.container h1 {
-  font-size: 3.5rem;
-}
-.container h2 {
-  font-size: 3rem;
-}
-.container h3 {
-  font-size: 2.5rem;
-}
-.container p {
-  font-size: 2rem;
 }
 .container .introContent h1 {
   padding-bottom: 15px;
@@ -187,8 +200,36 @@ nav .navTextContainer a {
 .container .howToContent button {
   padding: 5px;
   margin: 15px 0px;
-  width: 30%;
+  width: 40%;
   border: 2px solid black;
   border-radius: 9px;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  background-color: #F2EDE5;
+}
+@media (max-width:1000px) {
+  body {
+    background-color: #D9D4CD;
+  }
+  .container {
+    max-width: 90%;
+    padding: 15px;
+  }
+}
+@media (max-width:800px) {
+  .container .howToContent {
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .howToContent img {
+    width: 100%;
+  }
+  .container #howTo2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }

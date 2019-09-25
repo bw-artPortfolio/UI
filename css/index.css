@@ -167,11 +167,15 @@ nav .navTextContainer a {
   font-size: 2.5rem;
   color: #D9D4CD;
 }
+footer {
+  background-color: #0D0D0D;
+  height: 5.8%;
+}
 .container {
   padding: 20px 50px;
   max-width: 1000px;
   width: 100%;
-  height: 100%;
+  height: 1250px;
   margin: 0 auto;
 }
 .container .imgBanner img {
@@ -188,7 +192,7 @@ nav .navTextContainer a {
   padding: 0% 10%;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 .container .howToContent img {
@@ -200,11 +204,14 @@ nav .navTextContainer a {
 .container .howToContent button {
   padding: 5px;
   margin: 15px 0px;
-  width: 40%;
+  width: 30%;
   border: 2px solid black;
   border-radius: 9px;
   font-size: 2.5rem;
   background-color: #F2EDE5;
+}
+.container .carousel-inner img {
+  width: 100%;
 }
 @media (max-width:1000px) {
   body {
@@ -234,6 +241,10 @@ nav .navTextContainer a {
   }
 }
 @media (max-width:500px) {
+  .container {
+    padding-bottom: 0%;
+    height: 1080px;
+  }
   h1 {
     font-size: 3.5rem;
   }

@@ -169,7 +169,18 @@ nav .navTextContainer a {
 }
 footer {
   background-color: #0D0D0D;
-  height: 5.8%;
+}
+footer .footerNavContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footerNavContent a {
+  padding: 2.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #D9D4CD;
 }
 .container {
   padding: 20px 50px;

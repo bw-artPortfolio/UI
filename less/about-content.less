@@ -72,13 +72,15 @@
         .card {
             margin-bottom: 8%;
             width: 250px;
+            height: 200px;
 
             &:hover {
                 border: 1px solid @secondary-color;
             }
 
             @media @tablet {
-                width: 350px;
+               width: 300px;
+               height: 300px;
             }
 
             h3 {
@@ -87,7 +89,7 @@
                 color: @secondary-color;
 
                 @media @tablet {
-                    font-size: 3rem;
+                    font-size: 2rem;
                 }
             }//end of h3 tag
 
@@ -96,18 +98,53 @@
                 height: 100%;
             }
 
-            .desc {
-                padding: 5px;
+            .modal{
+                background-color: rgba(0,0,0,0.5);
+                z-index: 1;
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                
 
-                p {
-                    font-size: 1.6rem;
-                    text-align: center;
+                .desc {
+                    padding: 5px;
+                    .display-flex(space-evenly, center, column);
+                    background-color: @main-color;
+                    width: 80%;
+                    margin: auto;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
 
-                    @media @tablet {
-                        font-size: 2.5rem;
+                    img {
+                        width: 90%;
+                        padding: 5%;   
+                    }//end of img tag
+    
+                    p {
+                        font-size: 1.8rem;
+                        text-align: center;
+                        width: 90%;
+    
+                        @media @tablet {
+                            font-size: 2.5rem;
+                        }
+                    }//end of p tag
+
+                    a {
+
+                        button {
+                            font-size: 4rem;
+                            background-color: @secondary-color;
+                            padding: 5px;
+                            margin: 5px;
+                            border: 1px solid @main-color;
+                        }
                     }
-                }//end of p tag
-            }//end of desc
+                }//end of desc
+            }//end of modal
         }//end of card
     }//end of section-body
 }//end of team-section

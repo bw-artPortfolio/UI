@@ -1,12 +1,18 @@
-//show hide team desc
+//show team desc
 function toggleDisplay() {
-let current = event.target.className;
-let statusCheck = document.getElementById(current);
+    let targetClass = event.target.className;
+    let targetId = document.getElementById(targetClass);
 
-if(statusCheck.classList.contains("hidden")) {
-        statusCheck.classList.remove("hidden");
-    }
-else {
-    statusCheck.classList.add("hidden");
+    if(targetId.classList.contains("hidden")) {
+        targetId.classList.remove("hidden");
+    }    
 }
+
+//hide team desc
+function hideModal() {
+    let targetClass = event.target.className;
+
+    if(targetClass === 'modal') {
+       targetClass.classList.add("hidden");
+    }
 }

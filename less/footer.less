@@ -1,14 +1,22 @@
-footer {
-    height: 56px;
-    background-color: #0D0D0D;
-    .display-flex(center, center, column);
 
-    p {
-        text-align: center;
-        color: #D9D4CD;
-
-        @media @tablet {
-            font-size: 2rem;
+footer{
+    background-color: @navBarBgColor;
+    // height:5.8%;
+    .footerNavContent{
+        .flexBox(center,row,center);
+        a{
+            padding:2.5rem;
+            text-decoration: none;
+            font-size: @pSize - 1;
+            color: @navBarColor;
+        }
+    }
+    
+}
+@media @phone{
+    footer{
+        .footerNavContent{
+            padding:.15rem;
         }
     }
 }

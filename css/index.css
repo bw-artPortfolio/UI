@@ -287,26 +287,54 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+@media (min-width: 767px) {
+  .team-section .section-body .card .modal .desc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+}
 .team-section .section-body .card .modal .desc img {
   width: 90%;
   padding: 5%;
 }
-.team-section .section-body .card .modal .desc p {
+@media (min-width: 767px) {
+  .team-section .section-body .card .modal .desc img {
+    width: 40%;
+  }
+}
+.team-section .section-body .card .modal .desc .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.team-section .section-body .card .modal .desc .content p {
   font-size: 1.8rem;
   text-align: center;
   width: 90%;
 }
 @media (min-width: 767px) {
-  .team-section .section-body .card .modal .desc p {
+  .team-section .section-body .card .modal .desc .content p {
     font-size: 2.5rem;
   }
 }
-.team-section .section-body .card .modal .desc a button {
+.team-section .section-body .card .modal .desc .content a {
+  margin: 20px;
+}
+.team-section .section-body .card .modal .desc .content a button {
   font-size: 4rem;
   background-color: #ec7200;
   padding: 5px;
   margin: 5px;
   border: 1px solid #1f1e1e;
+}
+.team-section .section-body .card .modal .desc .close {
+  text-decoration: underline;
+}
+.team-section .section-body .card .modal .desc .close:hover {
+  cursor: pointer;
 }
 @media (min-width: 1100px) {
   #section2 {

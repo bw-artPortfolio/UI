@@ -1,3 +1,19 @@
+//variables
+
+// @heading-font: ;
+// @body-font: ;
+
+//media query variables
+@tablet: ~'(min-width: 767px)';
+@desktop: ~'(min-width: 1100px)';
+
+//mixins
+.display-flex(@justify, @align, @direction) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
 //Mixins
 .flexBox(@justfiy:flex-start,@direction:row,@items:flex-start){
     display:flex;
